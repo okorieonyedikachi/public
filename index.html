@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="heading"><h1>Hello world</h1></div>
+    <script>
+        // Your Firebase project configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDmIFdUOEzH5QSjS8hg4Bg1ObXFwWT_oJo",
+            authDomain: "memo-webapp-e59fe.firebaseapp.com",
+            projectId: "memo-webapp-e59fe",
+            storageBucket: "memo-webapp-e59fe.appspot.com",
+            messagingSenderId: "303334112000",
+            appId: "1:303334112000:web:a5723da4424a8fb86b91e5",
+            measurementId: "G-Y8M5G7XCGW"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      
+        // Get a Firestore instance
+        const db = firebase.firestore();
+        console.log(db);
+        // Use the Firestore instance to read and write data
+        // ...
+      </script>
+      
+    <!-- <script type="module" src="app.js"></script> -->
+</body>
+</html>
