@@ -31,7 +31,7 @@ db.collection('Memo-webApp').get().then((snapshot) => {
 });
 
 //real time listener
-db.collection("memo")
+db.collection("Memo-webApp")
 .orderBy("desc")
 .onSnapshot(snapshot => {
 // We also rendered data in real-time using
@@ -61,7 +61,7 @@ form.addEventListener("submit", e => {
  });
 
  //getting data
- db.collection('memo').get().then((snapshot) => {
+ db.collection('Memo-webApp').get().then((snapshot) => {
   console.log(snapshot.docs);
   snapshot.docs.forEach(doc => {
     console.log(doc.data())
